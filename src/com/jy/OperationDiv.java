@@ -1,4 +1,4 @@
-package com.jy;
+ï»¿package com.jy;
 
 public class OperationDiv extends Operation {
 
@@ -7,7 +7,7 @@ public class OperationDiv extends Operation {
 		double result = 0;
 		if (0 == mNumB) {
 			try {
-				throw new Exception("³ıÊı²»ÄÜÎª0!");
+				throw new Exception("é™¤æ•°ä¸èƒ½ä¸º0!");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

@@ -1,4 +1,4 @@
-package com.jy;
+﻿package com.jy;
 
 public class DivFactory implements IFactory {
 

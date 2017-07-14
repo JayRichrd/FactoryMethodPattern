@@ -1,4 +1,4 @@
-package com.jy;
+ï»¿package com.jy;
 
 import java.util.Scanner;
 
@@ -7,26 +7,26 @@ public class FactoryMethodPattern {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
-		// ÔËËã·ûÀàĞÍ
+		// è¿ç®—ç¬¦ç±»å‹
 		int operationType = 0;
-		// ÔËËã·û
+		// è¿ç®—ç¬¦
 		String operationStr = null;
 
-		// »ñÈ¡µÚÒ»¸ö²Ù×÷Êı
-		System.out.print("ÇëÊäÈë²Ù×÷ÊıA(AÎªdoubleÀàĞÍ):");
+		// è·å–ç¬¬ä¸€ä¸ªæ“ä½œæ•°
+		System.out.print("è¯·è¾“å…¥æ“ä½œæ•°A(Aä¸ºdoubleç±»å‹):");
 		Double numA = scanner.nextDouble();
 
-		// »ñÈ¡µÚ¶ş¸ö²Ù×÷Êı
-		System.out.print("ÇëÊäÈë²Ù×÷ÊıB(BÎªdoubleÀàĞÍ):");
+		// è·å–ç¬¬äºŒä¸ªæ“ä½œæ•°
+		System.out.print("è¯·è¾“å…¥æ“ä½œæ•°B(Bä¸ºdoubleç±»å‹):");
 		Double numB = scanner.nextDouble();
 
-		// »ñÈ¡ÔËËã·û
-		System.out.print("ÇëÊäÈë²Ù×÷Êı·ûºÅ(1±íÊ¾:+¡¢2±íÊ¾:-¡¢3±íÊ¾:*¡¢4±íÊ¾:/):");
+		// è·å–è¿ç®—ç¬¦
+		System.out.print("è¯·è¾“å…¥æ“ä½œæ•°ç¬¦å·(1è¡¨ç¤º:+ã€2è¡¨ç¤º:-ã€3è¡¨ç¤º:*ã€4è¡¨ç¤º:/):");
 		operationType = scanner.nextInt();
 
 		IFactory ifactory = null;
 		Operation operation = null;
-		// ¸ù¾İ²»Í¬µÄÔËËã·ûÀàĞÍ£¬Ñ¡Ôñ²»Í¬µÄÔËËãÀàĞÍ¹¤³§Àà£¬²¢´´½¨²»Í¬µÄÔËËãÀàĞÍ
+		// æ ¹æ®ä¸åŒçš„è¿ç®—ç¬¦ç±»å‹ï¼Œé€‰æ‹©ä¸åŒçš„è¿ç®—ç±»å‹å·¥å‚ç±»ï¼Œå¹¶åˆ›å»ºä¸åŒçš„è¿ç®—ç±»å‹
 		switch (operationType) {
 		case 1:
 			operationStr = "+";
@@ -52,12 +52,12 @@ public class FactoryMethodPattern {
 
 			break;
 		}
-		// ÔËËã
+		// è¿ç®—
 		operation.mNumA = numA;
 		operation.mNumB = numB;
 		double result = operation.getResult();
-		// Êä³öÔËËã½á¹û
-		StringBuilder resultSB = new StringBuilder("¼ÆËã½á¹û: ");
+		// è¾“å‡ºè¿ç®—ç»“æœ
+		StringBuilder resultSB = new StringBuilder("è®¡ç®—ç»“æœ: ");
 		resultSB.append(numA + " ");
 		resultSB.append(operationStr + " ");
 		resultSB.append(numB + " ");

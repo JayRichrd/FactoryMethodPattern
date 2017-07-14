@@ -1,6 +1,6 @@
-package com.jy;
+ï»¿package com.jy;
 
 public interface IFactory {
-	// ´´½¨ÔËËãÀà
+	// åˆ›å»ºè¿ç®—ç±»
 	Operation CreateOperation();
 }

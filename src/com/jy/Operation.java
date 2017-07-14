@@ -1,9 +1,9 @@
-package com.jy;
+锘縫ackage com.jy;
 
 public abstract class Operation {
-	// 第一个操作数
+	// 绗竴涓搷浣滄暟
 	public double mNumA;
-	// 第二个操作数
+	// 绗簩涓搷浣滄暟
 	public double mNumB;
 
 	public abstract double getResult();
